@@ -76,16 +76,26 @@
   background: #fff;
 }
 
-.send {
+.cam, .send {
   background-color: #999;
   border-radius: 50%;
   border: none;
   height: 1.7rem;
   width: 1.7rem;
-  position: absolute;
-  right: 1.15rem;
   cursor: pointer;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cam {
+  margin-right: 1rem;
+}
+
+.send {
+  position: absolute;
+  right: 1.15rem;
 }
 
 .messages {
@@ -94,8 +104,8 @@
   align-items: flex-start;
   overflow: auto;
   /* 100vh - 4rem from footer - 4rem from header */
-  max-height: calc(100vh - 4rem - 4rem); 
-  min-height: calc(100vh - 4rem - 4rem); 
+  /* max-height: calc(100vh - 4rem - 4rem); 
+  min-height: calc(100vh - 4rem - 4rem);  */
 }
 
 .message {

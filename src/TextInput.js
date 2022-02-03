@@ -1,5 +1,7 @@
 import './App.css';
 import { useState } from "react";
+import { FiSend, FiCamera } from "react-icons/fi";
+import React from "react";
 
 function TextInput(props) {
   const { send } = props;
@@ -20,6 +22,10 @@ function TextInput(props) {
 
   return (
     <footer className="footer">
+      <button className="cam" onClick={props.showCamera}>
+        <FiCamera></FiCamera>
+      </button>
+
       <input 
         className="text-input" 
         value={text} 
@@ -28,7 +34,7 @@ function TextInput(props) {
       </input>
 
       <button className="send" onClick={sendMsg}>
-        ↑
+        <FiSend></FiSend>
       </button>
     </footer>
   );
