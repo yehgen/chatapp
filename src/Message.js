@@ -1,8 +1,16 @@
 import React from "react";
 
-export default function Message(props) {
+function Message(props) {
+  return (
   // add date
-  // add user
-  // add pic
-  return <div className="message tip">{props.text}</div>
+  // add pic {props.name}
+  // text message
+    <div>
+      {/* add username above message */}
+      <span className="username">{props.user}</span>
+      <div className="message tip">{props.text}</div>
+    </div>
+  )
 }
+
+export default Message;

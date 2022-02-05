@@ -27,12 +27,13 @@
   flex-direction: column;
   color: #fff;
   justify-content: space-between;
+  cursor: url('./img/maple.cur'), auto;
 }
 
 .header {
   height: 4rem;
   width: 100%;
-  border-bottom: 2px solid #fff;
+  /* border-bottom: 2px solid #fff; */
   display: flex;
   align-items: center;
   padding: 0 1rem;
@@ -76,13 +77,13 @@
   background: #fff;
 }
 
-.cam, .send {
+.cam, .send, .pfp {
   background-color: #999;
   border-radius: 50%;
   border: none;
   height: 1.7rem;
   width: 1.7rem;
-  cursor: pointer;
+  cursor: url('./img/maplegrab.cur'), auto;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -104,8 +105,8 @@
   align-items: flex-start;
   overflow: auto;
   /* 100vh - 4rem from footer - 4rem from header */
-  /* max-height: calc(100vh - 4rem - 4rem); 
-  min-height: calc(100vh - 4rem - 4rem);  */
+  max-height: calc(100vh - 4rem - 4rem); 
+  min-height: calc(100vh - 4rem - 4rem); 
 }
 
 .message {
@@ -122,4 +123,59 @@
   border-style: solid;
   border-width: .5rem;
   border-radius: 4.5rem 4rem 4rem 0;
+}
+
+.editUser {
+  /* width: 10%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 70%;
+  margin-right: 20%; */
+  background: #333;
+}
+
+.editUser > * {
+  margin: 0 0rem 0 0.5rem;
+}
+
+.nameInput {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 0rem 0.5rem 0rem 0rem;
+}
+
+.editPen {
+  border-radius: 50%;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.saveUser {
+  background-color: #333;
+  color: #458eff;
+  border: none;
+}
+
+.editPen:hover, .saveUser:hover {
+  cursor: url('./img/maplegrab.cur'), auto;
+}
+
+.editPen:hover {
+  background-color: #1a1b1f;
+}
+
+.pfp {
+  /* background-color: #fff; */
+  /* color: black; */
+  color: #fff;
+}
+
+.username {
+  margin-left: 1rem;
 }

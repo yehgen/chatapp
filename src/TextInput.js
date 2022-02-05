@@ -23,7 +23,7 @@ function TextInput(props) {
   return (
     <footer className="footer">
       <button className="cam" onClick={props.showCamera}>
-        <FiCamera></FiCamera>
+        <FiCamera />
       </button>
 
       <input 
@@ -34,7 +34,7 @@ function TextInput(props) {
       </input>
 
       <button className="send" onClick={sendMsg}>
-        <FiSend></FiSend>
+        <FiSend />
       </button>
     </footer>
   );
