@@ -16,6 +16,7 @@ function App() {
   // "setMessage" is a function that is used to update "messages"
   const [messages, setMessage] = useState([]);
   // grab the key "name" locally, initially Guest from NamePicker
+  // const [user, setUsername] = useState("");
   const [user, setUsername] = useState(
     localStorage.getItem('name') || "Guest" // set default user to Guest when not "logged in"
   );
